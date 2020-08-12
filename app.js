@@ -1,4 +1,6 @@
 const express = require('express');
+//require('dotenv').config();
+console.log(process.env.APP);
 
 const candidatesRouter = require('./Routers/candidatesRouter');
 
@@ -16,3 +18,4 @@ app.listen(port, () => {
     console.log(`Running on port ${port}`);
 });
 
+module.exports = app; 
